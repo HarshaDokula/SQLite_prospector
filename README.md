@@ -16,7 +16,7 @@ get_data - requires a table name and query as an argument, prints the data in th
 2. Place the sqlite_prospector.py file in the same folder as the database
    or give the full path of the database while creating the object of importdb as shown below.
 
-'''python
+''' python
 import sqlite_prospector
 db_name = 'chinook.db'
 imp = importdb(db_name)
@@ -27,7 +27,7 @@ imp.get_data('albums')
 imp.get_data('albums',"select * from %s where ArtistId=50")
 '''
 
-'''Note:
+''' Note:
 A default database 'chinook.db' is also provided in the repo.
 The main method is written based on that db for demonstration purposes.
 '''
